@@ -189,6 +189,7 @@ public class MyTreeMap<K, V> implements Map<K, V> {
 
 	private V putHelper(Node node, K key, V value) {
 		// TODO: FILL THIS IN!
+		@SuppressWarnings("unchecked")
 		Comparable<? super K> k = (Comparable<? super K>) key;
 		int cmp = k.compareTo(node.key);
 
